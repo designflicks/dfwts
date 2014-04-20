@@ -1,15 +1,16 @@
 
-$("head").append("<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>");
+$("head").append("<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico' rel='stylesheet' type='text/css'>");
 $(".link .title").css({fontFamily: 'Montserrat'});
 $(".link .title").css({fontWeight: 'bold', textTransform: 'uppercase'});
 $(".link .title").css({lineHeight: '1.5'});
 
 // width
-$(".link").css({width: '700px'});
-$(".link").css({padding: '25px'});
+$("#siteTable").css({width: '700px', marginLeft: '100px'})
+$(".link").css({padding: '25px', width: '100%'});
+$(".infobar.welcome").css({padding: '0 15px'});
+$(".link, .infobar.welcome").css({boxSizing: 'border-box'});
 
 $(".link").css({borderRadius: '0', borderBottom: '1px solid #d8d8d8', marginBottom: '0'});
-$(".link").css({marginLeft: '100px'});
 
 $(".link .title").css({fontSize: '14px'});
 $(".link").css({padding: '15px'});
@@ -25,3 +26,22 @@ $(".md p").css({fontSize: '13px'});
 $(".md p").css({lineHeight: '1.5'});
 $(".md ol, .md ul").css({margin: '10px 0px 10px 20px'});
 $(".titlebox h1 a").css({top: '310px'})
+
+$(".domain").css({textTransform: 'lowercase', fontWeight: 'normal', fontSize: '10px'})
+
+$(".thumbnail").css({float: 'right'})
+$(".thumbnail.self").css({display: 'none'})
+$(".thumbnail.default").css({opacity: '0.5'})
+
+$(".titlebox h6:nth-of-type(1)").css({border: '0 none', background: 'transparent', top: '270px', padding: '0', left: '110px'})
+
+$("body").css({background: 'linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.5)), url(http://24.media.tumblr.com/56a9757318c0f2ed1c1c687f254b2fb8/tumblr_mopqkkwK2M1st5lhmo1_1280.jpg)'})
+$("body").css({backgroundSize: "cover"});
+$("body").css({backgroundAttachment: "fixed"});
+
+$("#header, #header:after").css({background: 'transparent'})
+
+$(".pagename a").css({display: 'none'});
+$(".titlebox h1 a").css({fontFamily: 'pacifico', color: 'white', fontWeight: 'normal', fontSize: '51px'})
+//testing
+$(".titlebox h1 a").css({top: '210px'})
