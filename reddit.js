@@ -1,4 +1,6 @@
 
+//http://www.jacquesbastien.com/startups/remora/
+
 $("head").append("<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico' rel='stylesheet' type='text/css'>");
 $(".link .title").css({fontFamily: 'Montserrat'});
 $(".link .title").css({fontWeight: 'bold', textTransform: 'uppercase'});
@@ -63,7 +65,7 @@ $(".footer a").css({color: 'white'})
 $(".footer a").css({fontFamily: 'Montserrat'})
 $(".footer a").css({fontSize: '12px', lineHeight: '1.75'})
 
-axisbank$(".footer .col").css({border: '0 none'})
+$(".footer .col").css({border: '0 none'})
 
 $(".footer-parent").css({textAlign: 'left'})
 
