@@ -115,3 +115,12 @@ $(".titlebox h6:nth-of-type(1)").css({top: '125px', fontFamily: 'Montserrat'})
 $("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(http://24.media.tumblr.com/56a9757318c0f2ed1c1c687f254b2fb8/tumblr_mopqkkwK2M1st5lhmo1_1280.jpg)'})
 $(".titlebox h1 a").css({top: '145px'})
 $("#header .tabmenu").css({top: '112px'})
+
+
+$(".side p>a[href^='/r/']:only-child").css({width: '50%', float: 'left', lineHeight: '2'})
+$(".side hr").css({clear: 'both'});
+$(".side p>strong").css({fontFamily: 'Montserrat', fontWeight: 'bold', textTransform: 'uppercase', fontSize: '12px', color: 'rgba(0, 0, 0, 0.75)'})
+
+$("#siteTable").css({borderTop: '5px solid hsl(40, 70%, 70%)'})
+$(".tabmenu").css({top: '116px'});
+$(".tabmenu li.selected a").css({borderBottom: '5px solid hsl(40, 70%, 30%)'});
