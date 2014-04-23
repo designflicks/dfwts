@@ -124,3 +124,8 @@ $(".side p>strong").css({fontFamily: 'Montserrat', fontWeight: 'bold', textTrans
 $("#siteTable").css({borderTop: '5px solid hsl(40, 70%, 70%)'})
 $(".tabmenu").css({top: '116px'});
 $(".tabmenu li.selected a").css({borderBottom: '5px solid hsl(40, 70%, 30%)'});
+
+
+
+//////
+$("#header-bottom-right").css("opacity", "0")
