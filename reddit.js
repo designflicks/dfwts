@@ -9,7 +9,7 @@ $(".link .title").css({lineHeight: '1.5'});
 
 // width
 $(".content").css({marginLeft: '0'});
-$("#siteTable").css({width: '700px', marginLeft: '100px'})
+$("#siteTable").css({width: '700px', marginLeft: '159px'})
 $(".link").css({padding: '25px', width: '100%'});
 $(".infobar.welcome").css({padding: '0 15px'});
 $(".link, .infobar.welcome").css({boxSizing: 'border-box'});
@@ -55,7 +55,7 @@ $("#header .tabmenu").css({background: 'transparent', border: '0 none'})
 $(".tabmenu li a").css({fontFamily: 'Montserrat', color: 'white'})
 $(".tabmenu li a").css({margin: '0px 30px 0px 0'})
 $(".content").css({marginTop: '0'})
-$(".titlebox h6:nth-of-type(1)").css({left: '100px', top: '190px', color: 'white'})
+$(".titlebox h6:nth-of-type(1)").css({left: '159px', top: '190px', color: 'white'})
 $("#header .tabmenu").css({textAlign: 'left', paddingLeft: '630px'})
 
 
@@ -79,9 +79,9 @@ $(".footer li.title").css({marginBottom: '15px'})
 
 $(".footer-parent").css({marginTop: '30px'});
 $(".footer .col").css({padding: '0', marginRight: '100px', height: 'auto'})
-$(".footer").css({margin: '0', padding: '0', marginLeft: '100px'});
+$(".footer").css({margin: '0', padding: '0', marginLeft: '159px'});
 
-$(".bottommenu").css({marginLeft: '100px', color: 'white'})
+$(".bottommenu").css({marginLeft: '159px', color: 'white'})
 $(".bottommenu a").css({color: 'white'})
 $(".footer").css({marginBottom: '20px'});
 
@@ -89,7 +89,7 @@ $(".footer").css({marginBottom: '20px'});
 $(".side .spacer:nth-child(3), .side .spacer:nth-child(5)").css({display: 'none'});
 $(".side .spacer").css({marginBottom: '30px', marginTop: '0'});
 $(".side .spacer").css({background: 'rgba(255, 255, 255, 1)'});
-$(".side").css({margin: "88px 218px 0px 0px"})
+$(".side").css({margin: "88px 159px 0px 0px"})
 
 $("#search input[type=text]").css({marginTop: '0'})
 $(".sidecontentbox .content li").css({marginBottom: '8px'})
@@ -116,16 +116,27 @@ $("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 
 $(".titlebox h1 a").css({top: '145px'})
 $("#header .tabmenu").css({top: '112px'})
 
+$(".login-form").prepend("<p><strong>Login</strong></p>")
 
 $(".side p>a[href^='/r/']:only-child").css({width: '50%', float: 'left', lineHeight: '2'})
 $(".side hr").css({clear: 'both'});
 $(".side p>strong").css({fontFamily: 'Montserrat', fontWeight: 'bold', textTransform: 'uppercase', fontSize: '12px', color: 'rgba(0, 0, 0, 0.75)'})
 
 $("#siteTable").css({borderTop: '5px solid hsl(40, 70%, 70%)'})
-$(".tabmenu").css({top: '116px'});
+$(".tabmenu").css({top: '116px', paddingLeft: '689px'});
 $(".tabmenu li.selected a").css({borderBottom: '5px solid hsl(40, 70%, 30%)'});
 
+$(".login-form-side").css({margin: '10px 15px'});
+$(".login-form-side input[type=text], .login-form-side input[type=password]").css({width: '287px'})
+
+$("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(http://localhost/dfwts/assets/laptopbg.png)'})
+
+$("#ad_main").css({marginLeft: "15px"})
+$("#header-img").css({top: '158px', left: '124px'});
+
+$("#search input[type=text]").css({borderRadius: '0', border: '0 none', borderBottom: '1px solid #ccc', backgroundColor: 'rgba(0, 0, 0, 0.1)', width: '290px', padding: '10px 0px 10px 40px', backgroundPosition: '-129px 9px'})
+$(".side .spacer").css({marginBottom: '15px'});
 
 
 //////
-$("#header-bottom-right").css("opacity", "0")
+$("#header-bottom-right").css("opacity", "0");
