@@ -2,6 +2,8 @@
 //http://www.jacquesbastien.com/startups/remora/
 
 $("head").append("<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico' rel='stylesheet' type='text/css'>");
+$("head").append('<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">');
+
 $(".link .title").css({fontFamily: 'Montserrat'});
 //$(".link .title").css({fontWeight: 'bold', textTransform: 'uppercase'});
 $(".link .title").css({fontWeight: 'bold', color: '#333'});
@@ -129,8 +131,7 @@ $(".tabmenu li.selected a").css({borderBottom: '5px solid hsl(40, 70%, 30%)'});
 $(".login-form-side").css({margin: '10px 15px'});
 $(".login-form-side input[type=text], .login-form-side input[type=password]").css({width: '287px'})
 
-//$("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(http://localhost/dfwts/assets/laptopbg.png)'})
-$("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(http://oi58.tinypic.com/66x7o7.jpg)'})
+$("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(http://localhost/dfwts/assets/laptopbg.png)'})
 
 $("#ad_main").css({marginLeft: "15px"})
 $("#header-img").css({top: '158px', left: '124px'});
@@ -149,6 +150,16 @@ $(".nav-buttons .nextprev a").css({fontSize: '16px'});
 
 $(".link .title").css({color: 'hsl(20, 35%, 15%)'});
 
+$(".tabmenu li a").css({margin: '0px 20px 0px 0'})
+$("#header .tabmenu").css({paddingLeft: '709px'})
+
+$(".nextprev a").css({fontSize: '14px', color: 'rgba(0, 0, 0, 0.5)', fontFamily: 'Montserrat'})
+$(".nav-buttons").css({padding: '0', overflow: 'hidden'})
+$(".nextprev").css({width: '50%', display: 'block', float: 'right', borderLeft: '1px solid #ddd'})
+$(".nextprev a").css({lineHeight: '35px'})
+
+$("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(http://localhost/dfwts/assets/laptopbg.png)'})
+$(".titlebox h6:nth-of-type(1)").prepend("<i class='fa fa-bookmark bookmark-icon'></i>")
+$(".bookmark-icon").css({marginRight: '10px'})
 
 $("#header-bottom-right, .titlebox h6:nth-of-type(2)").css("opacity", "0");
-//http://pastebin.com/raw.php?i=zwUFV9My
