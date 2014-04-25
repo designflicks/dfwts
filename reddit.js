@@ -129,7 +129,8 @@ $(".tabmenu li.selected a").css({borderBottom: '5px solid hsl(40, 70%, 30%)'});
 $(".login-form-side").css({margin: '10px 15px'});
 $(".login-form-side input[type=text], .login-form-side input[type=password]").css({width: '287px'})
 
-$("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(http://localhost/dfwts/assets/laptopbg.png)'})
+//$("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(http://localhost/dfwts/assets/laptopbg.png)'})
+$("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(http://oi58.tinypic.com/66x7o7.jpg)'})
 
 $("#ad_main").css({marginLeft: "15px"})
 $("#header-img").css({top: '158px', left: '124px'});
@@ -137,6 +138,17 @@ $("#header-img").css({top: '158px', left: '124px'});
 $("#search input[type=text]").css({borderRadius: '0', border: '0 none', borderBottom: '1px solid #ccc', backgroundColor: 'rgba(0, 0, 0, 0.1)', width: '290px', padding: '10px 0px 10px 40px', backgroundPosition: '-129px 9px'})
 $(".side .spacer").css({marginBottom: '15px'});
 
+$(".side p>strong").css({fontFamily: 'Montserrat', fontWeight: 'normal', textTransform: 'none', fontSize: '16px', color: 'rgba(0, 0, 0, 0.75)', display: 'block', paddingTop: '20px', clear: 'both'})
+$("hr").css({display: 'none'})
 
-//////
-$("#header-bottom-right").css("opacity", "0");
+$(".login-form-side input[type=text], .login-form-side input[type=password]").css({width: '287px'}).css({background: 'rgba(0, 0, 0, 0.1)', border: '1px solid #ccc', margin: '10px 0 0 0'});
+
+$(".nav-buttons").css({background: 'rgba(255, 255, 255, 0.9)', padding: '10px', textAlign: 'center'})
+$(".nav-buttons .nextprev").css({fontSize: '0px', lineHeight: '1', margin: '0', background: 'transparent', border: '0 none'});
+$(".nav-buttons .nextprev a").css({fontSize: '16px'});
+
+$(".link .title").css({color: 'hsl(20, 35%, 15%)'});
+
+
+$("#header-bottom-right, .titlebox h6:nth-of-type(2)").css("opacity", "0");
+//http://pastebin.com/raw.php?i=zwUFV9My
