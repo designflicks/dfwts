@@ -162,4 +162,23 @@ $("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 
 $(".titlebox h6:nth-of-type(1)").prepend("<i class='fa fa-bookmark bookmark-icon'></i>")
 $(".bookmark-icon").css({marginRight: '10px'})
 
-$("#header-bottom-right, .titlebox h6:nth-of-type(2)").css("opacity", "0");
+$(".sidecontentbox h1").html("Moderators").css({fontFamily: 'Montserrat', fontWeight: 'normal', fontSize: '16px', color: 'rgba(0, 0, 0, 0.75)'})
+
+$("#login_login-main>p strong").css({paddingTop: '0', fontWeight: 'bold', fontSize: '12px', textTransform: 'uppercase'})
+$("#header-bottom-right").css({top: '283px', right: '152px', background: 'transparent', fontSize: '12px'})
+$("#header-bottom-right .login-required").html("Register");
+$("#header-bottom-right .user").css({fontSize: '0'});
+$("#header-bottom-right a").css({fontSize: '12px', fontFamily: 'Montserrat'});
+$(".login-form-side #remember-me").css({lineHeight: '34px'});
+
+$("#header").css({height: '100px'});
+$(".titlebox h1 a").css({top: '95px'})
+$("#header-img").css({top: '108px'});
+$("#header .tabmenu").css({top: '66px'})
+$(".titlebox h6:nth-of-type(1)").css({top: '79px'})
+$("#header-bottom-right").css({top: '233px'});
+
+$("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(http://localhost/dfwts/assets/laptopbg.png)'})
+
+$(".titlebox h6:nth-of-type(2)").css("opacity", "0");
+$("head").append("<style>.subscribe-button a::after{display: none;}</style>");
