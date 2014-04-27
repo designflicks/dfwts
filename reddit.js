@@ -180,5 +180,17 @@ $("#header-bottom-right").css({top: '233px'});
 
 $("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(http://localhost/dfwts/assets/laptopbg.png)'})
 
+$(".morelink").css({background: '#31AC71', border: '0 none', height: 'auto', overflow: 'hidden'});
+$(".morelink a").css({fontFamily: 'montserrat', textAlign: 'left', paddingLeft: '15px', lineHeight: '40px', textShadow: 'none', width: 'auto', float: 'left'});
+$(".morelink a").before("<i class='fa fa-plus'></i>");
+$(".morelink i").css({display: 'block', float: 'left', color: 'white', padding: '0 10px 0 15px', lineHeight: '40px', float: 'left', fontSize: '14px'})
+$(".morelink a").css({paddingLeft: '0'});
+
+
+
+
+
+
+
 $(".titlebox h6:nth-of-type(2)").css("opacity", "0");
 $("head").append("<style>.subscribe-button a::after{display: none;}</style>");
