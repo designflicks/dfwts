@@ -107,7 +107,7 @@ $(".side").css({width: '330px'});
 $("#siteTable").css({position: 'relative', boxShadow: '0 0 15px 0 rgba(0, 0, 0, 0.25)'})
 $(".link").css({borderLeft: '0 none', borderRight: '0 none'})
 
-$("a.author").css({color: '#999', borderBottom: '1px dotted #aaa', display: 'inline-block'});
+$("#siteTable a.author").css({color: '#999', borderBottom: '1px dotted #aaa', display: 'inline-block'});
 $(".link .entry li .comments").css({color: '#999', borderBottom: '1px dotted #aaa', fontWeight: 'normal'})
 $(".link .flat-list").css({padding: '0'})
 $(".link .tagline, .link .entry li .comments").css({float: 'left', marginRight: '5px', fontSize: '11px', lineHeight: '1.6em', padding: '0'});
@@ -188,7 +188,27 @@ $(".morelink a").css({paddingLeft: '0'});
 
 
 
+$("#search input[type=text]").css({backgroundImage: 'none'})
+$("#search").prepend("<i class='fa fa-search search-icon'></i>").css({position: 'relative'})
+$(".search-icon").css({position: 'absolute', top: '0', left: '15px', fontSize: '16px', lineHeight: '43px', color: 'rgba(0, 0, 0, 0.5)'})
 
+$("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(http://localhost/dfwts/assets/laptopbg.png)'})
+$(".side a").css({color: 'hsl(40, 50%, 45%)'}); $(".redditname a").css({color: 'white'});
+
+
+//$(".sidecontentbox h1").css()
+$(".sidecontentbox li").css({width: '50%', float: 'left'})
+$(".sidecontentbox li .flair").css({display: 'none'})
+
+$(".sidecontentbox").css({padding: '0 15px'})
+$(".sidecontentbox a.helplink").css({textShadow: 'none', border: '0 none', borderRadius: '2px', margin: '0', fontSize: '12px', lineHeight: '23px'})
+$(".sidecontentbox a.helplink").html("Send Message");
+$(".sidecontentbox a.helplink").css({width: '35%'})
+$(".sidecontentbox .title").css({marginBottom: '10px'})
+$(".sidecontentbox .content").css({overflow: 'hidden', borderBottom: '1px solid #d8d8d8'})
+
+
+$("a[href^='irc']").css({display: 'block', marginTop: '10px'})
 
 
 
