@@ -13,3 +13,7 @@ $(".data td:nth-child(3) a, .data td:nth-child(4) a, .data td:nth-child(5) a, .d
 
 $("#page_content").css({margin: '0'})
 $(".data").css({width: '100%'})
+
+$("#serverinfo").css({background: 'transparent'})
+$("#serverinfo .item").css({color: 'black', textShadow: 'none'})
+$("#topmenucontainer").css({border: '0 none'})
