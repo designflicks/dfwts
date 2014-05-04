@@ -18,7 +18,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
   <link rel="stylesheet prefetch" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 <link rel="stylesheet prefetch" href="http://fonts.googleapis.com/css?family=Open+Sans">
-<link rel="stylesheet prefetch" href="http://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.14/jquery.jscrollpane.min.css">
+<!-- <link rel="stylesheet prefetch" href="http://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.0.14/jquery.jscrollpane.min.css"> -->
 
   <style>/* 
   HTML implementation of a Hip Chat redesign based on Jan Dvořák Dribbble shot.
@@ -482,7 +482,7 @@ ul.tabs-container{
 			</div>
 			<div class="chat-area">
 				<div class="title"><b>Conversation title</b><i class="fa fa-search"></i></div>
-				<div class="chat-list jspScrollable" tabindex="0" style="overflow: hidden; padding: 0px; width: 429px;">
+				<div class="chat-list jspScrollable-nope" tabindex="0" style="overflow: hidden; padding: 0px; width: 429px;">
 					
 				<div class="jspContainer" style="width: 429px; height: 403px;"><div class="jspPane" style="padding: 0px; width: 418px; top: 0px;"><ul>
 						<li class="me">
@@ -628,7 +628,7 @@ ul.tabs-container{
 		</div>
 	</div>
 
-  <script src="./hipchat_files/jquery.min.js"></script><script src="./hipchat_files/jquery.mousewheel.min.js"></script><script src="./hipchat_files/jquery.jscrollpane.min.js"></script>
+  <!-- <script src="./hipchat_files/jquery.min.js"></script><script src="./hipchat_files/jquery.mousewheel.min.js"></script><script src="./hipchat_files/jquery.jscrollpane.min.js"></script> -->
 
   <script>
     if (document.location.search.match(/type=embed/gi)) {
@@ -638,12 +638,12 @@ ul.tabs-container{
   </script>
 
   <script>
-    $(function()
-{
-	$('.chat-area > .chat-list').jScrollPane({
-		mouseWheelSpeed: 30
-	});
-});
+ //    $(function()
+	// {
+	// 	$('.chat-area > .chat-list').jScrollPane({
+	// 		mouseWheelSpeed: 30
+	// 	});
+	// });
     //@ sourceURL=pen.js
   </script>
 

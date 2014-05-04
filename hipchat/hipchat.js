@@ -41,3 +41,10 @@ $(".member-list .status").hide();
 $(".right-tabs .tabs-container").css({padding: '5px'})
 
 $(".blue-label").css({background: 'transparent', color: '#6ea0ff', padding: '0'}).html("@Cucu Ionel")
+
+$(".expand .fa-expand").addClass("fa-cog").removeClass("fa-expand")
+$(".right-tabs .fa-cog").hide();
+
+$(".input-area > input").css({float: 'left', margin: '0', borderRadius: '0 5px 5px 0', height: '32px'})
+$(".input-area .input-wrapper").css({borderRadius: '5px 0 0 5px', border: '1px solid #a0b4c0'})
+$(".input-area .input-wrapper input").css({minWidth: '282px'})
