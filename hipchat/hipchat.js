@@ -48,3 +48,24 @@ $(".right-tabs .fa-cog").hide();
 $(".input-area > input").css({float: 'left', margin: '0', borderRadius: '0 5px 5px 0', height: '32px'})
 $(".input-area .input-wrapper").css({borderRadius: '5px 0 0 5px', border: '1px solid #a0b4c0'})
 $(".input-area .input-wrapper input").css({minWidth: '282px'})
+
+
+$(".window-title > .title").css({overflow: 'visible'});
+$(".window-wrapper").css({minHeight: '730px'})
+
+$(".chat-list li:nth-child(4) .message").append("<img src='http://24.media.tumblr.com/6c0e95d27b8509096274f244ff5aeea9/tumblr_n21lusI21V1st5lhmo1_1280.jpg' />")
+$(".message img").css({width: '50%'})
+
+$(".conversation-list ul li.active a").css({background: 'white', color: '#445166'})
+$(".chat-area").css({boxShadow: 'none'});
+$(".conversation-list").css({background: "#f1f1f1"});
+$(".conversation-list ul li a").css({border: '0 none', color: '#445166'});
+
+
+$(".chat-list ul li:nth-child(odd)").prepend("<span class='gravatar'><img src='http://api.randomuser.me/0.3.2/portraits/women/26.jpg' /></span>");
+$(".chat-list ul li:nth-child(even)").prepend("<span class='gravatar'><img src='http://api.randomuser.me/0.3.2/portraits/men/12.jpg' /></span>");
+$(".chat-list ul li .gravatar img").css({width: '32px'});
+$(".chat-list ul li .gravatar").css({display: 'block', float: 'left', marginRight: '10px'})
+$(".chat-area ul .name").css({width: '150px'})
+$(".message").css({width: '310px'})
+
