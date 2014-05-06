@@ -69,3 +69,30 @@ $(".chat-list ul li .gravatar").css({display: 'block', float: 'left', marginRigh
 $(".chat-area ul .name").css({width: '150px'})
 $(".message").css({width: '310px'})
 
+
+
+$(".chat-list ul li .gravatar img").css({borderRadius: '100%'});
+
+//fixing widths
+$(".chat-area .chat-list, .jspContainer, .jspPane").css({width: '100%'});
+
+$(".chat-area .title").css({fontSize: '20px', fontWeight: 'normal', padding: '25px', color: 'rgba(0, 0, 0, 0.65)'})
+$(".conversation-list").css({background: 'white'})
+$(".chat-area, .right-tabs").css({border: '0 none'});
+
+$(".chat-area .title").css({padding: '25px 15px'});
+$(".chat-area .chat-list").css({top: '60px'});
+
+$(".conversation-list ul li a i.fa-times").hide();
+$(".conversation-list ul li a").css({padding: "10px 15px"});
+$(".conversation-list").css({paddingTop: '70px'})
+
+$(".right-tabs .tabs").remove();
+$(".my-account").before($(".right-tabs").html());
+$(".right-tabs").remove();
+$(".chat-area").css({right: '0'});
+
+$(".tabs-container").css({padding: '15px'})
+
+$(".conversation-list").css({width: '200px'});
+$(".chat-area").css({left: '200px'})
