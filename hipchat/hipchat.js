@@ -1,4 +1,4 @@
-$("head").append("<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico|Open+Sans:300|Raleway:400,700,900|Varela+Round' rel='stylesheet' type='text/css'>");
+$("head").append("<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico|Montserrat|Open+Sans:300|Raleway:400,700,900|Varela+Round' rel='stylesheet' type='text/css'>");
 $("head").append('<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">');
 
 $("body").css({fontFamily: 'Varela Round', fontSize: '13px'})
@@ -96,3 +96,21 @@ $(".tabs-container").css({padding: '15px'})
 
 $(".conversation-list").css({width: '200px'});
 $(".chat-area").css({left: '200px'})
+
+$(".conversation-list>ul:first-child").before("<h1>Chats</h1>");
+$(".conversation-list .tabs-container").before("<h1>Friends</h1>")
+$(".conversation-list h1").css({padding: '10px 15px', textTransform: 'uppercase', fontWeight: 'bold', fontFamily: 'Montserrat', color: 'rgba(0, 0, 0, 0.5)', fontSize: '12px'})
+
+$(".conversation-list").css({background: 'hsl(275, 55%, 98%)'});
+$(".conversation-list h1").css({fontSize: '32px', color: 'rgba(0, 0, 0, 0.1)', textTransform: 'lowercase', fontWeight: 'normal', fontFamily: 'Varela Round'})
+
+$(".chat-area .chat-list").css({borderBottom: '0 none'});
+$(".input-area").css({borderTop: '0 none'});
+
+$(".input-area").css({background: 'transparent', padding: '15px'})
+$(".input-area .input-wrapper input").css({minWidth: '415px'})
+
+$(".conversation-list .tabs-container").css({padding: '0 15px 15px 15px'});
+$(".conversation-list ul").css({marginBottom: '20px'})
+
+$(".conversation-list").css({paddingTop: '10px'})
