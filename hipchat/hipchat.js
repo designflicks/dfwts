@@ -114,3 +114,24 @@ $(".conversation-list .tabs-container").css({padding: '0 15px 15px 15px'});
 $(".conversation-list ul").css({marginBottom: '20px'})
 
 $(".conversation-list").css({paddingTop: '10px'})
+$(".window-wrapper").css({minHeight: '750px'})
+
+$(".my-account").css({background: 'transparent'})
+$(".my-account > .name").css({color: 'black'})
+$(".conversation-list").css({paddingTop: '80px'});
+$(".my-account").css({padding: '25px 15px', bottom: 'auto', top: '0'})
+
+$(".my-account").append("<div class='settings'><a><i class='fa fa-dashboard'></i></a><a><i class='fa fa-envelope'></i></a><a><i class='fa fa-power-off'></i></a></div>")
+$(".settings").css({clear: 'both'});
+$(".settings a").css({display: 'block', float: 'left', color: 'rgb(68, 81, 102)', padding: '10px 15px'})
+$(".conversation-list").css({paddingTop: '160px'})
+
+$(".settings").css({paddingLeft: '40px'});
+$(".settings a").css({padding: '10px 0', marginRight: '15px'});
+$(".settings a i").css({fontSize: '14px'})
+$(".conversation-list").css({paddingTop: '100px'})
+
+$(".window-wrapper").css({background: 'transparent'})
+$(".chat-area").css({background: 'rgba(255, 255, 255, 0.8)'})
+$(".window-title").css({background: 'rgba(255, 255, 255, 0.7)'})
+
