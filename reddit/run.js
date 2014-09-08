@@ -596,14 +596,13 @@ $(document).ready(function(){
 	
 
 	.queue(function(){ 
-		$("body").css({'-webkit-transform': 'translateY(-2750px)', '-webkit-transition': 'all 30s'}); 
+		$("body").css({'-webkit-transform': 'translateY(-1950px)', '-webkit-transition': 'all 30s'}); 
 		$("#wt_intro").fadeIn(100).addClass('notransition').css({opacity: "1"}); $("#wt_intro h2").hide();
 		$("#wt_intro h1").html("Thankyou!").css({color: 'white'})
 		dq(); 
-	dq(); })
+	}).delay(d*5)
+	.queue(function(){ $("body").css({'-webkit-transform': 'translateY(-2750px)', '-webkit-transition': 'all 10s'});  })
 
-	//$("body").css({'-webkit-transform': 'translateY(-2750px)', '-webkit-transition': 'all 30s'}); 
-	
 	.queue(function(){ $("body").css("overflow", "auto"); }).delay(d)
 
 	
