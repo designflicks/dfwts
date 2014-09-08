@@ -12,7 +12,8 @@ $("#siteTable_organic").parent().remove(); $(".sponsorshipbox, .infobar.welcome"
 $("#siteTable").css({width: '1013px'}); $(".link").css({marginRight: '0'}); $(".titlebox h6:nth-of-type(1)").css({right: '337px'});
 $(".titlebox h6:nth-of-type(2)").css("opacity", "0");
 $(".domain").css({position: 'relative', top: '-1px'});
-$(".edited-timestamp, .debuginfo").hide();
+$(".edited-timestamp").hide();
+$(".debuginfo").css({opacity: '0'});
 $("#siteTable a.author").css({display: 'inline-block'});
 $(".link .flair").hide();
 //$(".titlebox h6:nth-of-type(1)").remove();

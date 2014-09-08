@@ -245,7 +245,7 @@ $(document).ready(function(){
 
 		.queue(function(){comment("Let's increase the\nheight of the search\ninput else it looks\nweaker than the\nlogin inputs.", 192, 1200); }).delay(d)
 		.queue(function(){comment("And also remove the\nborder from the top.\nThere is nothing\nabove it(in the\nsidebar) which needs\nto be separated using\na border.", 192, 1200); }).delay(d)
-		.queue(function(){$("#search input[type=text]").css({paddingTop: '11px', paddingBottom: '9px', paddingLeft: '43px', borderRadius: '0', border: '0 none', width: '286px', borderBottom: '1px solid #ccc'}); $("#header-bottom-right").css({top: '+=10'}); $("body").css({backgroundImage: 'url(http://placehold.it/300x100/e5e5e5/e5e5e5.png&text=123)', backgroundSize: 'cover'}); $(".search-icon").css({top: '-2px', left: '15px', fontSize: '16px'}); sidelinks.css({top: '+=9'}); modlinks.css({top: '+=9'}); dq();}).delay(d)
+		.queue(function(){$("#search input[type=text]").css({paddingTop: '11px', paddingBottom: '9px', paddingLeft: '43px', borderRadius: '0', border: '0 none', width: '287px', borderBottom: '1px solid #ccc'}); $("#header-bottom-right").css({top: '+=10'}); $("body").css({backgroundImage: 'url(http://placehold.it/300x100/e5e5e5/e5e5e5.png&text=123)', backgroundSize: 'cover'}); $(".search-icon").css({top: '-2px', left: '15px', fontSize: '16px'}); sidelinks.css({top: '+=9'}); modlinks.css({top: '+=9'}); dq();}).delay(d)
 
 		.queue(function(){comment("Let's add a nice blurred background which has web design\nrelated items such as a laptop, books, magazines, etc.", 27, 475); }).delay(d)
 		.queue(function(){$("body").css({backgroundImage: 'url(http://localhost/dfwts/assets/laptopbg.png)'}); $("body").css({backgroundSize: "cover"}); $("body").css({backgroundAttachment: "fixed"}); dq();}).delay(d)
@@ -271,7 +271,7 @@ $(document).ready(function(){
 		.queue(function(){$("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(http://localhost/dfwts/assets/laptopbg.png)'});  dq();}).delay(d)
 
 
-		.queue(function(){$("body").animate({scrollTop: '2315'}); dq();}).delay(d)
+		.queue(function(){$("body").animate({scrollTop: '2365'}); dq();}).delay(d)
 
 		.queue(function(){ comment("Let's make the pagination links a part of the main listing itself.", 2476, 405, 'white'); }).delay(d)
 		.queue(function(){ comment("It will also help us give the main listing a footerish-end.", 2476, 457, 'white'); }).delay(d)
@@ -355,6 +355,8 @@ $(document).ready(function(){
 		.queue(function(){$(".link .title").css({lineHeight: '21px'}); /*$(".link .title").css({marginBottom: '3px'});*/ dq();}).delay(d)
 		.queue(function(){comment("Let's use dark gray\nfor the colors to keep\nit neutral. The blue\nlooks out of place.", 200, 5, 'white'); }).delay(d)
 		.queue(function(){$(".link .title").css({color: '#333'}); dq();}).delay(d)
+		.queue(function(){$("head").append("<style>#patch1 {color: #282 !important; }</style>"); comment("We can darken the\ngreen a bit for the\nsticky post.", 150, 15, 'white'); }).delay(d)
+		.queue(function(){$(".thing.stickied a.title, .tagline .moderator, .green").attr("id", "patch1"); dq(); }).delay(d)
 
 		.queue(function(){comment("The prominent listing titles now have a very solid shape and\ndon't need a dark border to separate them from each other.", 30, 165, 'white'); }).delay(d)
 

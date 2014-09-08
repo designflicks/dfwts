@@ -1,11 +1,14 @@
 //http://web.archive.org/web/20140724052024/http://www.reddit.com/r/web_design
 //http://static.dnaindia.com/images/2014/article-share-rt.png
 
+var domain = "localhost";
+//var domain = "designflicks.com";
+
 var s1=document.createElement('script'); 
 s1.src = "http://code.jquery.com/jquery-latest.min.js"; 
 s1.onload = function(){
-    var s1=document.createElement('script'); s1.src = "http://localhost/dfwts/reddit/init.js"; h1.appendChild(s1);
-	//var s1=document.createElement('script'); s1.src = "http://localhost/dfwts/reddit/run.js"; h1.appendChild(s1);
+    var s1=document.createElement('script'); s1.src = "http://"+domain+"/dfwts/reddit/init.js"; h1.appendChild(s1);
+	//var s1=document.createElement('script'); s1.src = "http://"+domain+"/dfwts/reddit/run.js"; h1.appendChild(s1);
 };
 var h1=document.getElementsByTagName('head')[0]; 
 h1.appendChild(s1);
@@ -59,7 +62,7 @@ function comment($string, $top, $left, $extra_classes)
 $("head").append(" \
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico|Varela+Round|Open+Sans:300|Raleway:100,200,300,400' rel='stylesheet' type='text/css'> \
 	<link href='//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css' rel='stylesheet'> \
-	<link rel='stylesheet' type='text/css' href='http://localhost/dfwts/df.css' media='all'> \
+	<link rel='stylesheet' type='text/css' href='http://"+domain+"/dfwts/df.css' media='all'> \
 ");
 
 
