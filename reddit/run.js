@@ -5,9 +5,9 @@
 $(document).ready(function(){
 	d = 0; t = '0';
 	
-	//$("body").animate({scrollTop: '4000'}, 30);
+	up();
 	$("body").css({'-webkit-transform': 'translateY(-2925px)'});
-	
+	var h = $("html");
 	$("html").delay(5000)
 		.queue(function(){ 
 			$("body").css({'-webkit-transform': 'translateY(0)', '-webkit-transition': 'all 15s cubic-bezier(0.785, 0.135, 0.15, 0.86)'}); 
@@ -86,7 +86,7 @@ $(document).ready(function(){
 		.queue(function(){ comment("Let's remove the rounded corners\nand shadow from the sidebar.", 160, 910); })
 		.queue(function(){$(".side").css({borderRadius: '0', boxShadow: 'none'}); dq();}).delay(d)
 
-		.queue(function(){$("body").animate({scrollTop: '370'}); dq();}).delay(d)
+		h.queue(function(){$("body").animate({scrollTop: '370'}); dq();}).delay(d)
 
 
 		.queue(function(){ comment("We can increase the width\nof the sidebar a bit to fit in\nmore text per line.", 696, 680); })
@@ -103,7 +103,7 @@ $(document).ready(function(){
 			});
 		}).delay(d)
 
-		.queue(function(){$("body").animate({scrollTop: '0'}); dq();}).delay(d)
+		h.queue(function(){$("body").animate({scrollTop: '0'}); dq();}).delay(d)
 		.queue(function(){ comment("Layout repairing.", 335, 760); })
 		.queue(function(){$(".login-form-side").css({margin: '10px 15px'}); $(".login-form-side input[type=text], .login-form-side input[type=password]").css({width: '287px'}); $(".login-required .login").css({'-webkit-transform': "translateX(-111px)"}); dq();}).delay(d)
 		.queue(function(){$("#search input[type=text]").css({width: '288px'}); dq();}).delay(d)
@@ -112,15 +112,15 @@ $(document).ready(function(){
 		//$(".login-form").css({paddingBottom: '5px'});
 		//fontFamily: 'Montserrat', 
 		.queue(function(){$(".login-form .btn").css({padding: '0 8px 1px 8px', fontSize: '11px', fontWeight: 'normal', lineHeight: '22px', borderRadius: '0', marginRight: '-3px'}); dq();}).delay(d)
-		.queue(function(){$(".login-form-side #remember-me").css({lineHeight: '28px', marginLeft: '0'}); dq();}).delay(d*2)
+		.queue(function(){$(".login-form-side #remember-me").css({lineHeight: '28px', marginLeft: '0'}); dq();}).delay(d*4)
 
 
 
 		// .queue(function(){$(".md ol, .md ul").css({margin: '10px 0px 10px 20px'}); dq();}).delay(d)
 
-		.queue(function(){ $("body").animate({scrollTop: '425'}); dq();}).delay(d)
+		h.queue(function(){ $("body").animate({scrollTop: '425'}); dq();}).delay(d)
 		.queue(function(){ comment("The font size of the general\ntext in the sidebar is pretty\nhigh. Let's reduce it a bit.", 700, 680); })
-		.queue(function(){ $(".md p").css({fontSize: '13px', lineHeight: '1.5'}); dq();}).delay(d*2)
+		.queue(function(){ $(".md p").css({fontSize: '13px', lineHeight: '1.5'}); dq();}).delay(d*4)
 		
 		
 
@@ -148,12 +148,12 @@ $(document).ready(function(){
 			})
 		}).delay(d)
 		//sidelinks.css({lineHeight: '2'});
-		.queue(function(){sidelinks.last().parent().next().css({marginTop: "225px", '-webkit-transition': 'all 1s cubic-bezier(0.19, 1, 0.22, 1)'}); dq();}).delay(d)
+		h.queue(function(){sidelinks.last().parent().next().css({marginTop: "225px", '-webkit-transition': 'all 1s cubic-bezier(0.19, 1, 0.22, 1)'}); dq();}).delay(d)
 
 		//.queue(function(){sidelinks.css({width: '50%', float: 'left', position: 'static'}); $(".side hr").css({clear: 'both'}); sidelinks.last().parent().next().css({marginTop: "0"}); dq();}).delay(d)
 
 		//.queue(function(){$("body").animate({scrollTop: '560'}); dq();}).delay(d)
-		.queue(function(){$("body").animate({scrollTop: '1375'}); dq();}).delay(d)
+		h.queue(function(){$("body").animate({scrollTop: '1375'}); dq();}).delay(d)
 		.queue(function(){$("#ad_main").css({marginLeft: "15px"}); dq();}).delay(d)
 
 
@@ -175,7 +175,7 @@ $(document).ready(function(){
 					dq();
 			}); 
 		}).delay(d)
-		.queue(function(){ $(".sidecontentbox li").last().find("a").html("AutoModerator(BOT)"); dq(); }).delay(d)
+		h.queue(function(){ $(".sidecontentbox li").last().find("a").html("AutoModerator(BOT)"); dq(); }).delay(d)
 		//.queue(function(){ $(".sidecontentbox li").css({marginBottom: '8px'}); dq(); }).delay(d)
 		.queue(function(){ comment("Let's convert this list also\nto a 2 column layout.", 1875, 680); }).delay(d)
 		.queue(function(){ 
@@ -258,7 +258,8 @@ $(document).ready(function(){
 		.queue(function(){comment("Let's add a prominent border at the top of\nthe main listing to give it a strong start.", 60, 880, 'white'); }).delay(d)
 		.queue(function(){$("#siteTable").css({borderTop: '5px solid hsl(40, 70%, 70%)'}); dq();}).delay(d)
 		.queue(function(){comment("The color of the border is picked\nfrom the background image itself.", 60, 880, 'white'); }).delay(d)
-		.queue(function(){comment("The border below the active nav link can be\nfused with the main listing border we just added.", 50, 880, 'white'); }).delay(d)
+		//.queue(function(){comment("The border below the active nav link can be\nfused with the main listing border we just added.", 50, 880, 'white'); }).delay(d)
+		.queue(function(){comment("The navigation can be fused\nwith the border we just added.", 50, 880, 'white'); }).delay(d)
 		.queue(function(){$("#header .tabmenu").css({top: '64px'}); dq();}).delay(d)
 		.queue(function(){$(".tabmenu li.selected a").css({borderBottom: '5px solid hsl(40, 70%, 30%)'}); dq();}).delay(d)
 		.queue(function(){$(".titlebox h6:nth-of-type(1)").css({top: '75px'}); dq();}).delay(d)
@@ -271,7 +272,7 @@ $(document).ready(function(){
 		.queue(function(){$("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(http://localhost/dfwts/assets/laptopbg.png)'});  dq();}).delay(d)
 
 
-		.queue(function(){$("body").animate({scrollTop: '2365'}); dq();}).delay(d)
+		.queue(function(){$("body").animate({scrollTop: '2365'}, d*3); dq();}).delay(d)
 
 		.queue(function(){ comment("Let's make the pagination links a part of the main listing itself.", 2476, 405, 'white'); }).delay(d)
 		.queue(function(){ comment("It will also help us give the main listing a footerish-end.", 2476, 457, 'white'); }).delay(d)
@@ -279,7 +280,7 @@ $(document).ready(function(){
 		.queue(function(){ $(".nav-buttons").css({background: 'rgba(255, 255, 255, 0.9)'}); dq();}).delay(d)
 		.queue(function(){ comment("The background color used is white(90% alpha).", 2523, 340, 'white'); }).delay(d)
 
-		.queue(function(){ comment("Removing the button feel from the \"next\" link and giving it a normal text link feel.", 2523, 213, 'white'); }).delay(d)
+		.queue(function(){ comment("Removing the button feel from the \"next\" link.", 2523, 213, 'white'); }).delay(d)
 		.queue(function(){ $(".nav-buttons .nextprev").css({background: 'transparent', border: '0 none'}); dq();}).delay(d)
 		.queue(function(){ comment("Minimalizing the text.", 2523, 425, 'white'); }).delay(d)
 		.queue(function(){ $(".nav-buttons .nextprev").css({fontSize: '0px', lineHeight: '1', margin: '0', color: 'transparent'}); $(".nav-buttons .nextprev a").css({fontSize: '14px', lineHeight: '35px', color: '#5b92fa'}); $(".nav-buttons").css({overflow: 'hidden'}); dq();}).delay(d)
@@ -333,9 +334,9 @@ $(document).ready(function(){
 
 	//.queue(function(){$(".footer-parent").css({textAlign: 'left'}); $(".footer").css({margin: '0', padding: '0', marginLeft: '159px'}); $(".bottommenu").css({marginLeft: '159px'}); $(".footer .col").css({padding: '0', marginRight: '100px', height: 'auto'}); $(".footer").css({marginBottom: '20px'}); dq();}).delay(d)
 
-		.queue(function(){ $(".bottommenu").first().css({"-webkit-transform": "translateX(-243px)"}); $(".bottommenu").last().css({"-webkit-transform": "translateX(-359px)"}); dq();}).delay(d)
+		.queue(function(){ $(".bottommenu").first().css({"-webkit-transform": "translateX(-243px)"}); $(".bottommenu").last().css({"-webkit-transform": "translateX(-359px)"}); dq();}).delay(d*5)
 
-		.queue(function(){$("body").animate({scrollTop: '0'}); dq();}).delay(d)
+		.queue(function(){$("body").animate({scrollTop: '0'}, d*3); dq();}).delay(d)
 
 		.queue(function(){comment("Let's blend the sidebar a little into the background by\nadding a little transparency(90% alpha) to its white\nso that the main listing is more prominent.", 37, 885, 'white'); }).delay(d)
 		.queue(function(){$(".side").css({background: "rgba(255, 255, 255, 0.9)", boxShadow: 'none'}); $("#search input[type=text], .login-form-side input[type=text], .login-form-side input[type=password]").css({backgroundColor: 'transparent'}); dq();}).delay(d)
@@ -431,11 +432,11 @@ $(document).ready(function(){
 		.queue(function(){ $(".footer a, .footer li.title").addClass("notransition").css({fontFamily: 'Montserrat'}); $(".footer a").css({fontSize: '12px', lineHeight: '2'}); $(".footer").addClass("notransition").css({padding: '0', margin: '15px 15px 15px 5px'}); dq(); }).delay(d)
 
 		.queue(function(){ comment("Let's increase the font size of the copyright info\nto make it easier to read it but fade it out a bit\nso that it's prominence doesn't increase.", 2830, 800, 'white'); }).delay(d)
-		.queue(function(){ $(".bottommenu").addClass("notransition").css({fontSize: "12px", opacity: '0.8', lineHeight: '1.5'}); $(".bottommenu").first().css({"-webkit-transform": "translateX(-197px)"}); $(".bottommenu").last().css({"-webkit-transform": "translateX(-332px)"}); $("body").animate({scrollTop: '2500'});  dq();}).delay(d*2)
+		.queue(function(){ $(".bottommenu").addClass("notransition").css({fontSize: "12px", opacity: '0.8', lineHeight: '1.5'}); $(".bottommenu").first().css({"-webkit-transform": "translateX(-197px)"}); $(".bottommenu").last().css({"-webkit-transform": "translateX(-332px)"}); $("body").animate({scrollTop: '2500'});  dq();}).delay(d*4)
 
-		.queue(function(){ $("body").animate({scrollTop: '0'}); dq(); }).delay(d)
+		.queue(function(){ $("body").animate({scrollTop: '0'}, d*3); dq(); }).delay(d)
 
-		.queue(function(){ comment("Moving towards a yellow-orange-brown theme for the design\nthe blue colors look out of place. Let's try to get rid of it.", 28, 165, 'white'); }).delay(d)
+		.queue(function(){ comment("Moving towards a brown-orange theme for the design\nthe blue colors look out of place. Let's try to get rid of it.", 28, 165, 'white'); }).delay(d)
 		.queue(function(){ comment("The reddit alien icon can be moved near the bookmark link making it look\nas if the alien is saying something important/personal to the user.", 28, 165, 'white'); }).delay(d)
 		.queue(function(){ comment("And the alien can be changed to a\nversion which doesn't have the blue.", 28, 165, 'white'); }).delay(d)
 
@@ -467,7 +468,7 @@ $(document).ready(function(){
 	//$(".tagline .moderator").removeClass("moderator")//.html("Moderator");
 	//$(".tagline .stickied-tagline").removeClass("stickied-tagline");
 
-		.queue(function(){ $(".bingo").css({color: 'red'}); comment("The word \"submitted\" can be removed. It's repetitive. Removing it won't do any bad.", 348, 222); }).delay(d)
+		.queue(function(){ $(".bingo").css({color: 'red'}); comment("The word \"submitted\" can be removed. It's repetitive. Removing it won't do any bad.", 348, 222); }).delay(d*3)
 		.queue(function(){ $(".bingo").css({opacity: '0', width: '0', margin: '0'}); dq(); }).delay(d)
 
 		.queue(function(){ comment("We can put everything other than the title in a single line.", 538, 335); $(".tagline .stickied-tagline").css({marginRight: '4px'}) }).delay(d)
@@ -591,7 +592,7 @@ $(document).ready(function(){
 	}).delay(d)
 
 	.queue(function(){ $("body").animate({scrollTop: '0'}); dq(); })
-	.queue(function(){ comment("And we are done!", 55, 955, 'white'); }).delay(d)
+	.queue(function(){ comment("And we are done!", 55, 955, 'white'); }).delay(d*4)
 	
 
 	.queue(function(){ 
@@ -601,7 +602,8 @@ $(document).ready(function(){
 		dq(); 
 	dq(); })
 
-
+	//$("body").css({'-webkit-transform': 'translateY(-2750px)', '-webkit-transition': 'all 30s'}); 
+	
 	.queue(function(){ $("body").css("overflow", "auto"); }).delay(d)
 
 	

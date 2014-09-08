@@ -101,3 +101,7 @@ function dq(force){
 
 
 
+function up()
+{
+	$("body").animate({scrollTop: '0'}, 0);
+}
