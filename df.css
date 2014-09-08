@@ -1,0 +1,68 @@
+.mark {
+	font-family: 'Varela round', 'Short Stack', 'rock salt', 'permanent marker';
+	position: absolute;
+	z-index: 9999;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 1.4;
+	color: #a00;
+	_text-shadow: 0 0 1px rgba(170, 0, 0, 0.5);
+	opacity: 0;
+}
+.mark.white {color: white;}
+.mark.right {text-align: right;}
+.mark.heading {color: rgba(255, 255, 255, 0.75);}
+.mark.heading:first-line { color: rgba(255, 255, 255, 1); font-family: montserrat; font-weight: bold;}
+.mark.heading.green:first-line { color: hsl(135, 100%, 90%); }
+.mark.heading.red:first-line { color: hsl(0, 100%, 90%); }
+
+
+.rect { background: rgb(0, 255, 153); position: absolute; opacity: 0.5; border-radius: 3px; z-index: 99999; -webkit-transform-origin: right;}
+.r0 {top: 70px; left: 160px; width: 327px; height: 27px;}
+.r1 {top: 71px; left: 691px; width: 178px; height: 27px;}
+.r2 {top: 238px; left: 876px; width: 309px; height: 27px;}
+.r3 {top: 339px; left: 1135px; width: 44px; height: 25px;}
+.r4 {top: 387px; left: 963px; width: 134px; height: 27px;}
+.r5 {top: 428px; left: 875px; width: 84px; height: 29px;}
+.r6 {top: 558px; left: 875px; width: 129px; height: 27px;}
+.r7 {top: 967px; left: 875px; width: 134px; height: 27px;}
+.r8 {top: 1004px; left: 875px; width: 103px; height: 27px;}
+.r9 {top: 1068px; left: 875px; width: 108px; height: 27px;}
+.r10 {top: 2573px; left: 667px; width: 48px; height: 26px;}
+.r11 {top: 1754px; left: 1074px; width: 108px; height: 25px;}
+
+.r12 {top: 302px; left: 220px; width: 23px; height: 24px;}
+
+.hidden {width: 0;}
+/*.swiperight{-webkit-transform: scaleX(0); -webkit-transform-origin: right;}*/
+
+
+
+
+
+
+
+
+
+
+body {overflow: hidden; pointer-events: none;} html{width: 1360px !important;}
+.notransition {-webkit-transition: none !important;} .notransform {-webkit-transform: none !important;}
+
+.modal {position: relative; z-index: 1000;}
+.modal:before {
+	content: '';
+	background: linear-gradient(rgba(0, 0, 0, 0.5) 90%, rgba(0, 0, 0, 0));
+	position: absolute;
+	top: -500px; left: -500px; right: -800px; bottom: -500px;
+	z-index: -1;
+	-webkit-transition: none !important;
+	-webkit-animation: fadein 3s;
+	opacity: 0;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-transform: translateY(-100%);
+}
+@-webkit-keyframes fadein {
+	100% {opacity: 1; -webkit-transform: translateY(0); }
+}
+
+.faded {opacity: 0.05;}
