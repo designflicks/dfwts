@@ -1,6 +1,6 @@
 
 $("head").append("<style>.footer:before {display: none;} .transition {-webkit-transition: all "+t+"s cubic-bezier(0.19, 1, 0.22, 1);}</style>");
-$("head").append("<style>#header:after {display: none; } .fancy-toggle-button .add:after {content: '';}</style>");
+$("head").append("<style>#header:after {content: ''; } .fancy-toggle-button .add:after {content: '';}</style>");
 
 $("#header-img, #header .tabmenu, .titlebox h6:nth-of-type(1)").addClass("group1");
 $(".titlebox h1 a, #header-bottom-right").addClass("group2");

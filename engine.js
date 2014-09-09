@@ -13,7 +13,7 @@ s1.onload = function(){
 var h1=document.getElementsByTagName('head')[0]; 
 h1.appendChild(s1);
 
-d = 1000/10; t = '1';
+d = 1000; t = '1';
 
 function animate_mark($t, text)
 {
@@ -21,8 +21,8 @@ function animate_mark($t, text)
 	if(typeof text == "undefined")
 	{
 		text = $this.html();
-		//$this.html("");
-		$this.html(text.substr(0, text.length-1));
+		$this.html("");
+		//$this.html(text.substr(0, text.length-1));
 	}
 
 	//$(".mark").not($(this)).fadeOut();
@@ -35,7 +35,7 @@ function animate_mark($t, text)
 
 	if(text.length == length)
 	{
-		setTimeout(function(){$this.fadeOut(d/10, function(){dq();} ); }, length*50/10)
+		setTimeout(function(){$this.fadeOut(d, function(){dq();} ); }, length*50)
 		return;
 	}
 

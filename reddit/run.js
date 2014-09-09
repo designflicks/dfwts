@@ -13,7 +13,7 @@ $(document).ready(function(){
 			$("body").css({'-webkit-transform': 'translateY(0)', '-webkit-transition': 'all 15s cubic-bezier(0.785, 0.135, 0.15, 0.86)'}); 
 			$("#wt_intro").fadeOut(5000);
 			 dq(); 
-		}).delay(d*20*10)
+		}).delay(d*20)
 		.queue(function(){ comment("Let's start with the main listing.", 352, 790); })
 		.queue(function(){ $(".side").fadeTo(500, 0.05); $("#header").fadeTo(500, 0.05, function(){ dq(); }); }).delay(d)
 
@@ -39,7 +39,7 @@ $(document).ready(function(){
 		.queue(function(){$(".thumbnail.self").css({display: 'none'}); dq();}).delay(0)
 
 		.queue(function(){$("body").animate({scrollTop: '210'}); dq();}).delay(d)	
-		.queue(function(){ comment("The vertical flow is\nnow broken because\nof thumbnails being\nremoved from some\nposts.", 460, 6); })
+		.queue(function(){ comment("The vertical flow is\nnow broken because\nof the thumbnails\nbeing removed from\nsome posts.", 460, 6); })
 		.queue(function(){ comment("We can try to move\nthe remaining\nthumbnails to the\nright to restore\nthe vertical flow.", 460, 10); })
 		.queue(function(){$(".thumbnail").css({'-webkit-transform': 'translateX(557px)'}); dq();}).delay(d)
 		.queue(function(){$(".thumbnail:visible").next().css({'-webkit-transform': 'translateX(-75px)', paddingLeft: '0'}); dq();}).delay(d)
@@ -120,7 +120,7 @@ $(document).ready(function(){
 
 		h.queue(function(){ $("body").animate({scrollTop: '425'}); dq();}).delay(d)
 		.queue(function(){ comment("The font size of the general\ntext in the sidebar is pretty\nhigh. Let's reduce it a bit.", 700, 680); })
-		.queue(function(){ $(".md p").css({fontSize: '13px', lineHeight: '1.5'}); dq();}).delay(d*4)
+		.queue(function(){ $(".md p").css({fontSize: '13px', lineHeight: '1.5'}); dq();}).delay(d*3)
 		
 		
 
@@ -148,7 +148,7 @@ $(document).ready(function(){
 			})
 		}).delay(d)
 		//sidelinks.css({lineHeight: '2'});
-		h.queue(function(){sidelinks.last().parent().next().css({marginTop: "225px", '-webkit-transition': 'all 1s cubic-bezier(0.19, 1, 0.22, 1)'}); dq();}).delay(d)
+		h.queue(function(){sidelinks.last().parent().next().css({marginTop: "225px", '-webkit-transition': 'all 1s cubic-bezier(0.19, 1, 0.22, 1)'}); dq();}).delay(d*3)
 
 		//.queue(function(){sidelinks.css({width: '50%', float: 'left', position: 'static'}); $(".side hr").css({clear: 'both'}); sidelinks.last().parent().next().css({marginTop: "0"}); dq();}).delay(d)
 
@@ -216,7 +216,7 @@ $(document).ready(function(){
 
 
 		//fade back non sidebar elements
-		.queue(function(){ $("#header").children().not("#header-bottom-right").removeClass('faded'); $("#siteTable, .titlebox h6:nth-of-type(1)").removeClass('faded'); dq();}).delay(d) 
+		.queue(function(){ $("#header").children().not("#header-bottom-right").removeClass('faded'); $("#siteTable, .titlebox h6:nth-of-type(1)").removeClass('faded'); dq();}).delay(d*3) 
 		.queue(function(){$("body").animate({scrollTop: '0'}); dq();}).delay(d)
 
 		.queue(function(){ comment("Let's remove the page name in the header area and\nuse the one available at the top of the sidebar.", 80, 790);}).delay(d)
@@ -247,7 +247,10 @@ $(document).ready(function(){
 		.queue(function(){comment("And also remove the\nborder from the top.\nThere is nothing\nabove it(in the\nsidebar) which needs\nto be separated using\na border.", 192, 1200); }).delay(d)
 		.queue(function(){$("#search input[type=text]").css({paddingTop: '11px', paddingBottom: '9px', paddingLeft: '43px', borderRadius: '0', border: '0 none', width: '287px', borderBottom: '1px solid #ccc'}); $("#header-bottom-right").css({top: '+=10'}); $("body").css({backgroundImage: 'url(http://placehold.it/300x100/e5e5e5/e5e5e5.png&text=123)', backgroundSize: 'cover'}); $(".search-icon").css({top: '-2px', left: '15px', fontSize: '16px'}); sidelinks.css({top: '+=9'}); modlinks.css({top: '+=9'}); dq();}).delay(d)
 
-		.queue(function(){comment("Let's add a nice blurred background which has web design\nrelated items such as a laptop, books, magazines, etc.", 27, 475); }).delay(d)
+		.queue(function(){
+			$("body").css({'-webkit-transition': 'all 1s cubic-bezier(0.19, 1, 0.22, 1)'}); 
+			comment("Let's add a nice blurred background which has web design\nrelated items such as a laptop, books, magazines, etc.", 27, 475); 
+		}).delay(d)
 		.queue(function(){$("body").css({backgroundImage: 'url(http://localhost/dfwts/assets/laptopbg.png)'}); $("body").css({backgroundSize: "cover"}); $("body").css({backgroundAttachment: "fixed"}); dq();}).delay(d)
 
 		.queue(function(){comment("Let's fix the colors of the pagename, bookmark,\nand navigation to make them clearly visible.", 60, 880, 'white'); }).delay(d)
@@ -269,13 +272,13 @@ $(document).ready(function(){
 
 		.queue(function(){ comment("The bookmark and nav links are not clearly visible\ndue to the brightness of the background image.", 60, 880, 'white');}).delay(d)
 		.queue(function(){ comment("We can make the background image\na bit darker to help with this issue.", 60, 880, 'white');}).delay(d)
-		.queue(function(){$("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(http://localhost/dfwts/assets/laptopbg.png)'});  dq();}).delay(d)
+		.queue(function(){$("body").css({backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(http://localhost/dfwts/assets/laptopbg.png)'});  dq();}).delay(d*3)
 
 
-		.queue(function(){$("body").animate({scrollTop: '2365'}, d*3); dq();}).delay(d)
+		.queue(function(){$("body").animate({scrollTop: '2365'}, d*3); dq();}).delay(d*5)
 
 		.queue(function(){ comment("Let's make the pagination links a part of the main listing itself.", 2476, 405, 'white'); }).delay(d)
-		.queue(function(){ comment("It will also help us give the main listing a footerish-end.", 2476, 457, 'white'); }).delay(d)
+		.queue(function(){ comment("It will also help us give the main listing a footerish end.", 2476, 457, 'white'); }).delay(d)
 
 		.queue(function(){ $(".nav-buttons").css({background: 'rgba(255, 255, 255, 0.9)'}); dq();}).delay(d)
 		.queue(function(){ comment("The background color used is white(90% alpha).", 2523, 340, 'white'); }).delay(d)
@@ -336,7 +339,7 @@ $(document).ready(function(){
 
 		.queue(function(){ $(".bottommenu").first().css({"-webkit-transform": "translateX(-243px)"}); $(".bottommenu").last().css({"-webkit-transform": "translateX(-359px)"}); dq();}).delay(d*5)
 
-		.queue(function(){$("body").animate({scrollTop: '0'}, d*3); dq();}).delay(d)
+		.queue(function(){$("body").animate({scrollTop: '0'}, d*3); dq();}).delay(d*5)
 
 		.queue(function(){comment("Let's blend the sidebar a little into the background by\nadding a little transparency(90% alpha) to its white\nso that the main listing is more prominent.", 37, 885, 'white'); }).delay(d)
 		.queue(function(){$(".side").css({background: "rgba(255, 255, 255, 0.9)", boxShadow: 'none'}); $("#search input[type=text], .login-form-side input[type=text], .login-form-side input[type=password]").css({backgroundColor: 'transparent'}); dq();}).delay(d)
@@ -407,7 +410,7 @@ $(document).ready(function(){
 		.queue(function(){ $(".side p>strong").css({fontWeight: 'normal', fontSize: '16px', display: 'block', clear: 'both'}); sidelinks.css({top: '+=24'}); modlinks.css({top: '+=24'}); dq(); }).delay(d)
 		.queue(function(){comment("The headings are\nnow large enough to\nact as separators too.\nSo we can remove\nthe horizontal\ndividers.", 965, 1200, 'white'); }).delay(d)
 		.queue(function(){ $("hr").css({borderColor: 'transparent'}); dq(); }).delay(d)
-		.queue(function(){ comment("Let's increase the\nspace between the\nsections a bit more\nfor better separation", 965, 1200, 'white'); }).delay(d)
+		.queue(function(){ comment("Let's increase the\nspace between the\nsections a bit more\nfor better separation.", 965, 1200, 'white'); }).delay(d)
 		.queue(function(){ $(".side p>strong").css({paddingTop: '5px'}); sidelinks.css({top: '+=17'}); modlinks.css({top: '+=25'});  dq(); }).delay(d)
 
 		.queue(function(){ $("body").animate({scrollTop: '1240'}); dq(); }).delay(d)
@@ -418,23 +421,23 @@ $(document).ready(function(){
 		.queue(function(){ $(".helplink").css({fontFamily: 'Montserrat', padding: '1px 8px', fontWeight: 'bold', fontSize: '11px', lineHeight: '18px', width: '82px'}); dq(); }).delay(d)
 
 		.queue(function(){  comment("Let's remove the\nuppercase styling\nof the \"Moderators\"\nheading and make it\nlook like the other\nheadings above.", 1750, 1200, 'white'); }).delay(d)
-		.queue(function(){ $(".sidecontentbox h1").html("Moderators").css({fontFamily: 'Montserrat', fontWeight: 'normal', fontSize: '16px', color: 'rgba(0, 0, 0, 0.75)', paddingTop: '1px'}); modlinks.css({top: '-=2'}); $(".sidecontentbox").css({height: '-=2'}); dq(); }).delay(d)
+		.queue(function(){ $(".sidecontentbox h1").html("Moderators").css({fontFamily: 'Montserrat', fontWeight: 'normal', fontSize: '16px', color: 'rgba(0, 0, 0, 0.75)', paddingTop: '1px'}); modlinks.css({top: '-=2'}); $(".sidecontentbox").css({height: '-=2'}); dq(); }).delay(d*4)
 
 
 
 
 
 		.queue(function(){ $("body").animate({scrollTop: '2220'}); dq(); }).delay(d)
-		.queue(function(){ comment("Let's change the font of the pagination\nlink to Montserrat and turn it dark grey.", 2560, 875, 'white'); }).delay(d)
+		.queue(function(){ comment("Let's change the font of the pagination\nlink to Montserrat and turn it gray.", 2560, 875, 'white'); }).delay(d)
 		.queue(function(){ $(".nextprev a").css({fontFamily: 'Montserrat', color: 'rgba(0, 0, 0, 0.5)'}); dq(); }).delay(d)
 
 		.queue(function(){ comment("Let's change the headings and links\nin the footer into Montserrat.", 2650, 870, 'white'); }).delay(d)
 		.queue(function(){ $(".footer a, .footer li.title").addClass("notransition").css({fontFamily: 'Montserrat'}); $(".footer a").css({fontSize: '12px', lineHeight: '2'}); $(".footer").addClass("notransition").css({padding: '0', margin: '15px 15px 15px 5px'}); dq(); }).delay(d)
 
-		.queue(function(){ comment("Let's increase the font size of the copyright info\nto make it easier to read it but fade it out a bit\nso that it's prominence doesn't increase.", 2830, 800, 'white'); }).delay(d)
+		.queue(function(){ comment("Let's increase the font size of the copyright info\nto make it easier to read it but fade it out a bit\nso that it's prominence doesn't increase.", 2820, 750, 'white'); }).delay(d)
 		.queue(function(){ $(".bottommenu").addClass("notransition").css({fontSize: "12px", opacity: '0.8', lineHeight: '1.5'}); $(".bottommenu").first().css({"-webkit-transform": "translateX(-197px)"}); $(".bottommenu").last().css({"-webkit-transform": "translateX(-332px)"}); $("body").animate({scrollTop: '2500'});  dq();}).delay(d*4)
 
-		.queue(function(){ $("body").animate({scrollTop: '0'}, d*3); dq(); }).delay(d)
+		.queue(function(){ $("body").animate({scrollTop: '0'}, d*3); dq(); }).delay(d*5)
 
 		.queue(function(){ comment("Moving towards a brown-orange theme for the design\nthe blue colors look out of place. Let's try to get rid of it.", 28, 165, 'white'); }).delay(d)
 		.queue(function(){ comment("The reddit alien icon can be moved near the bookmark link making it look\nas if the alien is saying something important/personal to the user.", 28, 165, 'white'); }).delay(d)
@@ -448,7 +451,7 @@ $(document).ready(function(){
 // .queue(function(){ $(".bookmark-icon").css({marginRight: '8px'}); dq(); }).delay(d)
 
 // .queue(function(){ $(".titlebox h6:nth-of-type(1)").css({left: '169px'}); dq(); }).delay(d)
-		.queue(function(){ comment("Let's decrease the space between the navigation links and add some padding\non the right to make space for the bottom border when the last link is active.", 28, 580, 'white'); }).delay(d)
+		.queue(function(){ comment("Let's decrease the space between the navigation links and add some padding\non the right to make space for the bottom border when the last link is active.", 28, 600, 'white'); }).delay(d)
 		//
 		.queue(function(){$(".tabmenu li a").removeClass('notransition').css({margin:'0 15px'}); $("#header .tabmenu").css({paddingLeft:'195px'}); dq(); }).delay(d)
 		.queue(function(){ comment("Padding on the left of the Reddit\nalien to balance things.", 28, 165, 'white'); }).delay(d)
@@ -468,7 +471,7 @@ $(document).ready(function(){
 	//$(".tagline .moderator").removeClass("moderator")//.html("Moderator");
 	//$(".tagline .stickied-tagline").removeClass("stickied-tagline");
 
-		.queue(function(){ $(".bingo").css({color: 'red'}); comment("The word \"submitted\" can be removed. It's repetitive. Removing it won't do any bad.", 348, 222); }).delay(d*3)
+		.queue(function(){ $(".bingo").css({color: 'red'}); comment("The word \"submitted\" can be removed. It's repetitive. Removing it won't do any bad.", 348, 222); }).delay(d)
 		.queue(function(){ $(".bingo").css({opacity: '0', width: '0', margin: '0'}); dq(); }).delay(d)
 
 		.queue(function(){ comment("We can put everything other than the title in a single line.", 538, 335); $(".tagline .stickied-tagline").css({marginRight: '4px'}) }).delay(d)
@@ -519,8 +522,8 @@ $(document).ready(function(){
 		dq();
 	}).delay(d)
 
-	.queue(function(){ comment("Let's color the comments info dark brown to make it more eye-catching.", 500, 222); }).delay(d)
-	.queue(function(){ $(".comments").css({color: 'hsl(40, 50%, 35%)'}); dq(); })
+	.queue(function(){ comment("Let's color the comments info golden/brown to make it more eye-catching.", 500, 222); }).delay(d)
+	.queue(function(){ $(".comments").css({color: 'hsl(40, 50%, 35%)'}); dq(); }).delay(d)
 
 	.queue(function(){ comment("Let's move the expand icon to the right. It looks weird in the middle.", 325, 222); }).delay(d)
 	.queue(function(){ 
@@ -554,7 +557,7 @@ $(document).ready(function(){
 
 	.queue(function(){ comment("The expand icon is very heavy. Let's try something less prominent.", 325, 222); }).delay(d)
 	.queue(function(){ $(".expando-button").html("<a href='#' class='expand-text' style='color: inherit;'>Expand<i class='fa fa-angle-down' style='margin-left: 4px;'></i></a>").removeClass("expando-button").css({color: '#999', marginRight: '6px', backgroundImage: 'none', fontSize: '12px', position: 'relative', float: 'left', width: '16px', overflow: 'visible', whiteSpace: 'nowrap', lineHeight: '19px'}); $(".tagline strong").css({margin: '0px 11px 0px 7px'}); dq(); }).delay(d)
-	.queue(function(){ comment("Unlike the author name it's not an external link and has an icon, hence it's light grey.", 325, 222); }).delay(d)
+	.queue(function(){ comment("Unlike the author name it's not an external link and has an icon, hence it's light gray.", 325, 222); }).delay(d)
 
 	.queue(function(){ comment("The voting controls\nare repeated for\nevery item and are\nvery obvious.", 325, 10, 'white'); }).delay(d)
 	.queue(function(){ comment("So let's change the\nicons to something\nlighter.", 325, 10, 'white'); }).delay(d)
@@ -568,7 +571,7 @@ $(document).ready(function(){
 	.queue(function(){ comment("Let's fade out the\nvoting icons a bit\nmore.", 325, 10, 'white'); }).delay(d)
 	.queue(function(){ $(".arrow i").css({color: '#ccc'}); dq(); }).delay(d)
 
-	.queue(function(){ comment("Let's color the search\nicon dark gray.", 188, 1200, 'white'); }).delay(d)
+	.queue(function(){ comment("Let's color the\nmagnifying glass icon\ndark gray.", 188, 1200, 'white'); }).delay(d)
 	.queue(function(){ 
 		$(".search-icon").css({color: 'rgba(0, 0, 0, 0.5)'}); dq(); 
 		$(".notransition").removeClass('notransition');
@@ -581,7 +584,7 @@ $(document).ready(function(){
 	.queue(function(){ $("a[href*='web_design/wiki/faq']").addClass("transition").css({position: 'relative', top: '0', left: '0'}); comment("A list with a single item doesn't make sense.", 542, 873); }).delay(d)
 	.queue(function(){ $("a[href*='web_design/wiki/faq']").css({top: '-37px', left: '121px', fontWeight: 'normal'}).append("."); dq(); }).delay(d)
 	.queue(function(){ 
-		$("a[href*='web_design/wiki/faq']").css({top: '-27px', left: '147px'}).parents("ul").css({height: '0', padding: '0', margin: '0', overflow: 'visible', opacity: '0'}).next().next().css({marginTop: '-2px'});
+		$("a[href*='web_design/wiki/faq']").css({top: '-27px', left: '147px'}).parents("ul").css({height: '0', padding: '0', margin: '0', overflow: 'visible'}).next().next().css({marginTop: '-2px'});
 		sidelinks.css({top: '-=38'}); modlinks.css({top: '-=39'});
 		dq();
 	}).delay(d)
@@ -591,35 +594,18 @@ $(document).ready(function(){
 		$(".morelink, .fancy-toggle-button .add, .helplink").css({background: 'rgba(49, 172, 113, 0.9)', borderColor: 'transparent', boxShadow: 'none'}); dq(); 
 	}).delay(d)
 
-	.queue(function(){ $("body").animate({scrollTop: '0'}); dq(); })
-	.queue(function(){ comment("And we are done!", 55, 955, 'white'); }).delay(d*4)
+	.queue(function(){ $("body").animate({scrollTop: '0'}); dq(); }).delay(d*1.5)
+	.queue(function(){ 
+		comment("And we are done!", 55, 955, 'white'); 
+		$("body").css({'-webkit-transition': 'all 30s'}); 
+	}).delay(d*4)
 	
 
 	.queue(function(){ 
-		$("body").css({'-webkit-transform': 'translateY(-1950px)', '-webkit-transition': 'all 30s'}); 
+		$("body").css({'-webkit-transform': 'translateY(-1935px)'}); 
 		$("#wt_intro").fadeIn(100).addClass('notransition').css({opacity: "1"}); $("#wt_intro h2").hide();
 		$("#wt_intro h1").html("Thankyou!").css({color: 'white'})
 		dq(); 
-	}).delay(d*5)
+	}).delay(d*33)
 	.queue(function(){ $("body").css({'-webkit-transform': 'translateY(-2750px)', '-webkit-transition': 'all 10s'});  })
-
-	.queue(function(){ $("body").css("overflow", "auto"); }).delay(d)
-
-	
-//$("a.author, .comments").css({marginRight: '0'}); $(".tagline strong").css({margin: '0 9px'})
-
-//$("#siteTable").css({borderTop: '5px solid hsl(38, 77%, 70%)'});
-	//$(".morelink a").prepend("<i class='fa fa-pencil' style='margin-right: 10px;'></i>")
-	//$(".morelink").css({margin: '0 15px'});
-	//$(".morelink").css({textAlign: 'left', paddingLeft: '13px', height: 'auto'});
-	//$(".morelink a").css({lineHeight: '34px'});
-
-	//$(".fancy-toggle-button .add, .helplink").css({background: 'hsla(40, 50%, 45%, 0.9)', borderColor: 'transparent', color: 'white'});
-
-
-	
 })
-
-
-//blend with or blend into?
-//check spelling of grey all over
